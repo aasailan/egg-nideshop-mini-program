@@ -14,6 +14,7 @@ App({
     });
   },
   
+  // 自定义全局数据
   globalData: {
     userInfo: {
       nickname: 'Hi,游客',

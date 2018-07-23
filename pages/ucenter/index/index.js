@@ -37,8 +37,10 @@ Page({
   onUnload: function () {
     // 页面关闭
   },
-  goLogin(){
-    user.loginByWeixin().then(res => {
+  goLogin(info){
+    console.log(info);
+
+    user.loginByWeixin(info.detail).then(res => {
       this.setData({
         userInfo: res.data.userInfo
       });

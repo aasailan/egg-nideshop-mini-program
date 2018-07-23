@@ -1,8 +1,9 @@
 <view class="container">
-  <view class="profile-info" bindtap="goLogin">
+  <view class="profile-info">
     <image class="avatar" src="{{userInfo.avatar}}"></image>
     <view class="info">
       <text class="name">{{userInfo.nickname}}</text>
+      <button open-type="getUserInfo" bindgetuserinfo="goLogin">点击登录</button>
       <!-- <text class="level">{{userInfo.username}}</text> -->
     </view>
   </view>

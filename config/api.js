@@ -1,7 +1,9 @@
-const ApiRootUrl = 'http://127.0.0.1:8360/api/';
+const ApiRootUrl = 'http://127.0.0.1:7001/api/';
+const eggApiRootUrl = 'http://127.0.0.1:7001/api/';
+// const ApiRootUrl = 'http://www.joeaasailan.tk:8360/api/';
 
 module.exports = {
-  IndexUrl: ApiRootUrl + 'index/index', //首页数据接口
+  IndexUrl: eggApiRootUrl + 'index/index', //首页数据接口
   CatalogList: ApiRootUrl + 'catalog/index',  //分类目录全部分类数据接口
   CatalogCurrent: ApiRootUrl + 'catalog/current',  //分类目录当前分类数据接口
 
@@ -36,7 +38,7 @@ module.exports = {
   CommentCount: ApiRootUrl + 'comment/count',  //评论总数
   CommentPost: ApiRootUrl + 'comment/post',   //发表评论
 
-  TopicList: ApiRootUrl + 'topic/list',  //专题列表
+  TopicList: eggApiRootUrl + 'topic/list',  //专题列表
   TopicDetail: ApiRootUrl + 'topic/detail',  //专题详情
   TopicRelated: ApiRootUrl + 'topic/related',  //相关专题
 
